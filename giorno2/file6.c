@@ -5,7 +5,7 @@ int main()
     int n;
     int t;
     int s;
-    printf("quanti anni ha tua nonna\n");
+    printf("quanti anni ha mia nonna\n");
     scanf("%d", &n);
         if(n>=30 && n<50)
         {
