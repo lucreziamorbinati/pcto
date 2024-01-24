@@ -5,15 +5,15 @@ void somma(int a, int b){
 }
 
 void sottrazione(int a, int b) {
-    printf("la sottrazione dei numeri è: %d/n", (a-b));
+    printf("la sottrazione dei numeri è: %d\n", (a-b));
 }
 
 void divisione (int a, int b) {
-    printf("la divisione dei numeri è: %d/n", (a/b));
+    printf("la divisione dei numeri è: %d\n", (a/b));
 }
 
-voide moltiplicazione(int a, int b) {
-    printf("la moltiplicazione dei numeri è: %d/n", (a*b));
+void moltiplicazione(int a, int b) {
+    printf("la moltiplicazione dei numeri è: %d/\n", (a*b));
 }
 
 
@@ -33,8 +33,8 @@ int main ()
     scanf("%d", &y);
 
     printf("che operazione vuoi fare? + - / * \n");
-    printf("premere:\n 1 per la somma\n 2 per la sottrazione\n 3 per la divisione \n 4 per la moltiplicazione\n ")
-    scanf("%d", &operazione)
+    printf("premere:\n 1 per la somma\n 2 per la sottrazione\n 3 per la divisione \n 4 per la moltiplicazione\n");
+    scanf("%d", &operazione);
     
     if (operazione== 1)
     {
