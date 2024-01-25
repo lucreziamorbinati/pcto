@@ -44,6 +44,44 @@ void accesso()
         }
     }
 }
+void armocromia()
+{
+    int pelle;
+    int occhi;
+    int capelli;
+    printf("Grazie per tutte le risposte!");
+    printf("Ora verrai sottoposto ad un test che determinerà la tua armocromia");
+    printf("Indicare il sottotono dell'incarnato digitando i seguenti numeri:\n");
+    printf("1: latte\n2: chiaro\n3: olivastro/scuro\n");
+    scanf("%d", &pelle);
+    printf("Indicare il colore degli occhi digitando i seguenti numeri:\n");
+    printf("1: marroni\n2: verdi\n3: azzurri\n");
+    scanf("%d", &occhi);
+    printf("Indicare il colore dei capelli digitando i seguenti numeri:\n");
+    printf("1: neri/castani\n2: biondi\n3: rossi\n");
+    scanf("%d", &capelli);
+    if (pelle == 1 && occhi == 3 && capelli == 2)
+    {
+        printf("La tua stagione è: Summer!");
+        printf("Tonalità da indossare:\n colori chiari e freddi, tutte le sfumature del rosa, colori non eccessivamente accesi");
+    }
+    else if (pelle == 3 && occhi == 1 && capelli == 1)
+    {
+        printf("La tua stagione è: Winter!");
+        printf("Tonalità da indossare:\n colori scuri e freddi, come blu notte, viola e verde scuro");
+    }
+    else if (pelle == 2 && occhi == 2 && capelli == 3 )
+    {
+        printf("La tua stagione è: Autumn!");
+        printf("Tonalità da indossare:\n rosso pomodoro, giallo senape, rosa salmone scuro, colori dorati");
+    }
+    else
+    {
+        printf("La tua stagione è: Spring!");
+        printf("Tonalità da indossare:\n oro, turchese, tinte di verde, arancione");
+    }
+
+}
 int main()
 
 {
@@ -76,7 +114,7 @@ int main()
         scanf("%s", registrazione2);
         printf("Accesso confermato! Benvenuto su Befashion!\n");
         printf("Desideri acquistare un account premium? Il costo è di 3,99 euro\nDigita si/no\n");
-        scanf("%c", premium);
+        scanf("%s", premium);
         if (strcmp(premium, "si") == 0)
         {
             srand(time(NULL));
@@ -92,13 +130,13 @@ int main()
     scanf("%s", acquirenteovenditore);
     while (strcmp(acquirenteovenditore, "acquirente") == 0)
     {
-        printf("Sei in possesso di un account premium?\n);
-        scanf("%c", risposta);
+        printf("Sei in possesso di un account premium?\n");
+        scanf("%s", risposta);
         if (strcmp(risposta, "si") == 0)
         {
             inizio:
             printf("Verifica delle credenziali: inserisci il tuo numero di autenticazione\n");
-            scanf("%d", verutente);
+            scanf("%d", &verutente);
             if ( verutente = d )
             {
                 printf("Benvenuto nel tuo account premium\n");
@@ -118,22 +156,15 @@ int main()
             printf("Perfetto! Un'ultima domanda: qual è il tuo budget?\n");
             scanf("%s", budget);
             printf("Bene! Adesso indica il tipo di capo che vorresti acquistare!\n");
-            scanf(%s", capo);
-            while (strcmp(sesso, "maschio") == 0)
-                {
-                    if
-                }   
-            while (strcmp(sesso, "femmina") == 0)
-                {
-                printf("");
-                 }
-
-
+            scanf("%s", capo);
+            armocromia();
+        }
+        else
+        {
+            printf("nooo");
+        }
+        break;
     }
-
-    
-
-
 return (0);
 }
 
