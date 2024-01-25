@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <time.h>
 void accesso()
 {
     char utente[50];
@@ -39,7 +41,6 @@ void accesso()
             }
             i++;
             break;
-
         }
     }
 }
@@ -50,10 +51,16 @@ int main()
     char inizioregistrazione2[] = "sono già registrato";
     char registrazione1[50];
     char registrazione2[50];
+    char premium[2];
+    int d;
     char acquirenteovenditore[50];
+    char risposta[2];
+    int verutente;
     char sesso[50];
+    int eta;
     char catstile[50];
     char budget[50];
+    char capo[50];
     printf("Ciao! Ti diamo il benvenuto nel nostro sito. Sei già registrato o vuoi iniziare la registrazione?\n");
     scanf("%[^\n]*s", inizioregistrazione);
     if (strcmp(inizioregistrazione, inizioregistrazione2) == 0)
@@ -68,19 +75,58 @@ int main()
         printf("Digita la tua password (max 50 caratteri)\n");
         scanf("%s", registrazione2);
         printf("Accesso confermato! Benvenuto su Befashion!\n");
+        printf("Desideri acquistare un account premium? Il costo è di 3,99 euro\nDigita si/no\n");
+        scanf("%c", premium);
+        if (strcmp(premium, "si") == 0)
+        {
+            srand(time(NULL));
+            d = rand() % 1000000;
+            printf("Ok! Il tuo codice segreto di autenticazione è: %d\n", rand() % 1000000);
+        }
+        else
+        {
+            printf("Ok! Usufruirai allora della versione gratuita\n");
+        }
     }
     printf("Sei un acquirente o un venditore?\n");
     scanf("%s", acquirenteovenditore);
-    if (strcmp(acquirenteovenditore, "acquirente") == 0)
+    while (strcmp(acquirenteovenditore, "acquirente") == 0)
     {
-        printf("Perfetto! Ora ti facciamo qualche domanda per conoscerci meglio...\n");
-        printf("Qual è il tuo sesso? (maschio/femmina/altro)\n");
-        scanf("%s", sesso);
-        printf("Bene! Ora, indica la tua categoria di stile: casual, elegante, sportivo, street, punk, vintage\n");
-        scanf("%s", catstile);
-        printf("Perfetto! Un'ultima domanda: qual è il tuo budget? 25/50/100/150/200/300+\n");
-        scanf("%s", budget);
-        printf("Bene! Adesso indica il capo che vorresti acquistare!\n");
+        printf("Sei in possesso di un account premium?\n);
+        scanf("%c", risposta);
+        if (strcmp(risposta, "si") == 0)
+        {
+            inizio:
+            printf("Verifica delle credenziali: inserisci il tuo numero di autenticazione\n");
+            scanf("%d", verutente);
+            if ( verutente = d )
+            {
+                printf("Benvenuto nel tuo account premium\n");
+            }
+            else
+            {
+                printf("Ci dispiace, il numero di autenticazione è errato\n");
+                goto inizio;
+            }
+            printf("Perfetto! Ora ti facciamo qualche domanda per conoscerci meglio...\n");
+            printf("Qual è il tuo sesso? (maschio/femmina/altro)\n");
+            scanf("%s", sesso);
+            printf("Grazie! Ora indica la tua età\n");
+            scanf("%d", &eta);
+            printf("Bene! Ora, indica la tua categoria di stile: casual, elegante, sportivo, street, punk, vintage\n");
+            scanf("%s", catstile);
+            printf("Perfetto! Un'ultima domanda: qual è il tuo budget?\n");
+            scanf("%s", budget);
+            printf("Bene! Adesso indica il tipo di capo che vorresti acquistare!\n");
+            scanf(%s", capo);
+            while (strcmp(sesso, "maschio") == 0)
+                {
+                    if
+                }   
+            while (strcmp(sesso, "femmina") == 0)
+                {
+                printf("");
+                 }
 
 
     }
