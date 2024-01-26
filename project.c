@@ -160,7 +160,7 @@ int main()
             scanf("%d", &budget);
             printf("Bene! Adesso indica il tipo di capo che vorresti acquistare! (Indica la tua scelta tra scarpe, pantaloni, magliette, felpe, giubbotti, borse, maglieria intima (solo neonati)\n");
             scanf("%s", capo);            
-            if (strcmp(sesso, "femmina" ) == 0)
+            if ((strcmp(sesso, "femmina" )) == 0)
             {
                 if ( eta < 6)
                 {
@@ -169,7 +169,7 @@ int main()
                         printf("I brand che ti consigliamo sono:\n");
                         printf("John Lewis\n");
                         printf("Petit Bateau\n");
-                        printf("Polarn O.Pyret");
+                        printf("Polarn O.Pyret\n");
                     }
                     else
                     {
@@ -191,9 +191,9 @@ int main()
                 {
                     if (budget < 240)
                     {
-                        if (capo == "scarpe")
+                        if (strcmp(capo, "scarpe") == 0)
                         {
-                            if (catstile == "casual" || catstile == "street")
+                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Jordan brand : Aj1, Aj3, Aj4\n");
@@ -245,7 +245,7 @@ int main()
                     {
                         if (capo == "scarpe")
                         {
-                            if (catstile == "casual" || catstile == "street")
+                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
