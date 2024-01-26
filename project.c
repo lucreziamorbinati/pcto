@@ -99,6 +99,7 @@ int main()
     char catstile[50];
     int budget;
     char capo[50];
+    char femmina[] = "femmina";
     printf("Ciao! Ti diamo il benvenuto nel nostro sito. Sei già registrato o vuoi iniziare la registrazione?\n");
     scanf("%[^\n]*s", inizioregistrazione);
     if (strcmp(inizioregistrazione, inizioregistrazione2) == 0)
@@ -146,6 +147,8 @@ int main()
                 printf("Ci dispiace, il numero di autenticazione è errato\n");
                 goto inizio;
             }
+            armocromia();
+            new:
             printf("Perfetto! Ora ti facciamo qualche domanda per conoscerci meglio...\n");
             printf("Qual è il tuo sesso? (maschio/femmina/altro)\n");
             scanf("%s", sesso);
@@ -156,9 +159,8 @@ int main()
             printf("Perfetto! Un'ultima domanda: qual è il tuo budget?\n");
             scanf("%d", &budget);
             printf("Bene! Adesso indica il tipo di capo che vorresti acquistare! (Indica la tua scelta tra scarpe, pantaloni, magliette, felpe, giubbotti, borse, maglieria intima (solo neonati)\n");
-            scanf("%s", capo);
-            armocromia();
-            if (strcmp(sesso, "femmina") == 0)
+            scanf("%s", capo);            
+            if (strcmp(sesso, "femmina" ) == 0)
             {
                 if ( eta < 6)
                 {
@@ -561,9 +563,14 @@ int main()
                         }   
                     }
                 }
-            }    
-            break ;
         }
+        else
+        {
+            goto new;
+        }
+        break;
+    }
+            
 return (0);
 }
 
