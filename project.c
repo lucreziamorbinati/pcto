@@ -49,8 +49,8 @@ void armocromia()
     int pelle;
     int occhi;
     int capelli;
-    printf("Grazie per tutte le risposte!");
-    printf("Ora verrai sottoposto ad un test che determinerà la tua armocromia");
+    printf("Grazie per tutte le risposte!\n");
+    printf("Ora verrai sottoposto ad un test che determinerà la tua armocromia\n");
     printf("Indicare il sottotono dell'incarnato digitando i seguenti numeri:\n");
     printf("1: latte\n2: chiaro\n3: olivastro/scuro\n");
     scanf("%d", &pelle);
@@ -62,23 +62,23 @@ void armocromia()
     scanf("%d", &capelli);
     if (pelle == 1 && occhi == 3 && capelli == 2)
     {
-        printf("La tua stagione è: Summer!");
-        printf("Tonalità da indossare:\n colori chiari e freddi, tutte le sfumature del rosa, colori non eccessivamente accesi");
+        printf("La tua stagione è: Summer!\n");
+        printf("Tonalità da indossare:\n colori chiari e freddi, tutte le sfumature del rosa, colori non eccessivamente accesi\n");
     }
     else if (pelle == 3 && occhi == 1 && capelli == 1)
     {
-        printf("La tua stagione è: Winter!");
-        printf("Tonalità da indossare:\n colori scuri e freddi, come blu notte, viola e verde scuro");
+        printf("La tua stagione è: Winter!\n");
+        printf("Tonalità da indossare:\n colori scuri e freddi, come blu notte, viola e verde scuro\n");
     }
     else if (pelle == 2 && occhi == 2 && capelli == 3 )
     {
-        printf("La tua stagione è: Autumn!");
-        printf("Tonalità da indossare:\n rosso pomodoro, giallo senape, rosa salmone scuro, colori dorati");
+        printf("La tua stagione è: Autumn!\n");
+        printf("Tonalità da indossare:\n rosso pomodoro, giallo senape, rosa salmone scuro, colori dorati\n");
     }
     else
     {
-        printf("La tua stagione è: Spring!");
-        printf("Tonalità da indossare:\n oro, turchese, tinte di verde, arancione");
+        printf("La tua stagione è: Spring!\n");
+        printf("Tonalità da indossare:\n oro, turchese, tinte di verde, arancione\n");
     }
 
 }
@@ -154,13 +154,13 @@ int main()
             scanf("%s", sesso);
             printf("Grazie! Ora indica la tua età\n");
             scanf("%d", &eta);
-            printf("Bene! Ora, indica la tua categoria di stile: casual, elegante, street, tacchi\n");
+            printf("Bene! Ora, indica la tua categoria di stile: casual, elegante, street, dark\n");
             scanf("%s", catstile);
             printf("Perfetto! Un'ultima domanda: qual è il tuo budget?\n");
             scanf("%d", &budget);
             printf("Bene! Adesso indica il tipo di capo che vorresti acquistare! (Indica la tua scelta tra scarpe, pantaloni, magliette, felpe, giubbotti, borse, maglieria intima (solo neonati)\n");
             scanf("%s", capo);            
-            if ((strcmp(sesso, "femmina" )) == 0)
+            if ((strcmp(sesso, "femmina")) == 0)
             {
                 if ( eta < 6)
                 {
@@ -184,8 +184,8 @@ int main()
                 {
                     printf("I brand che ti consigliamo sono:\n");
                     printf("Little Blueberry Kids\n");
-                    printf("QforQuinn");
-                    printf("Frugi");
+                    printf("QforQuinn\n");
+                    printf("Frugi\n");
                 }
                 else if (eta > 12 && eta < 30)
                 {
@@ -193,13 +193,13 @@ int main()
                     {
                         if (strcmp(capo, "scarpe") == 0)
                         {
-                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
+                            if (strcmp(catstile, "casual") == 0)
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Jordan brand : Aj1, Aj3, Aj4\n");
-                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple");
-                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris");
-                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC");
+                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple\n");
+                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris\n");
+                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC\n");
                                 printf("Dottor Martens brand\n");
                                 printf("I modelli Dottor Martens del momento sono: Vegan Dottor Martens, High & Low\n ");
                                 printf("Veja brand\n");
@@ -215,10 +215,10 @@ int main()
                         else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
-                            printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zmpa");
+                            printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zampa\n");
                             printf("Anna Field\n");
                             printf("Aware\n");
-                            printf("Dickies\n Modelli del momento: Newington, 874, Duck Canvas");
+                            printf("Dickies\n Modelli del momento: Newington, 874, Duck Canvas\n");
                         }
                         else if (strcmp(capo, "magliette") == 0)
                         {
@@ -245,7 +245,7 @@ int main()
                     {
                         if (strcmp(capo, "scarpe") == 0)
                         {
-                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
+                            if (strcmp(catstile, "casual") == 0)
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
@@ -255,8 +255,8 @@ int main()
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Yves Saint Laurent brand\nModelli del momento: YSL Sandali Opium, YSL Decolleté aperte\n");
-                                printf("Casadei\nModelli del momento: Decolleté aperte/chiuse");
-                                printf("Gucci\nModelli del momento: Decolleté GG, Decolleté Slingback");
+                                printf("Casadei\nModelli del momento: Decolleté aperte/chiuse\n");
+                                printf("Gucci\nModelli del momento: Decolleté GG, Decolleté Slingback\n");
                             }
                         }
                         else if (strcmp(capo, "pantaloni") == 0)
@@ -313,8 +313,8 @@ int main()
                 {
                     printf("I brand che ti consigliamo sono:\n");
                     printf("Little Blueberry Kids\n");
-                    printf("QforQuinn");
-                    printf("Frugi");
+                    printf("QforQuinn\n");
+                    printf("Frugi\n");
                 }
                 else if (eta > 12 && eta < 60)
                 {
@@ -322,21 +322,21 @@ int main()
                     {
                         if (strcmp(capo, "scarpe") == 0)
                         {
-                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
+                            if (strcmp(catstile, "casual") == 0)
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
-                                printf("Jordan brand : Aj1, Aj3, Aj4");
-                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple");
-                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris");
-                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC");
-                                printf("New Balance brand");
-                                printf("I modelli New Balance del momento sono: NB 530, NB 550");
-                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
-                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
-                                printf("Adidas Brand");
-                                printf("I modelli Adidas del momento sono: NB 530, NB 550");
-                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
-                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
+                                printf("Jordan brand : Aj1, Aj3, Aj4\n");
+                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple\n");
+                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris\n");
+                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC\n");
+                                printf("New Balance brand\n");
+                                printf("I modelli New Balance del momento sono: NB 530, NB 550\n");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white\n");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow\n");
+                                printf("Adidas Brand\n");
+                                printf("I modelli Adidas del momento sono: NB 530, NB 550\n");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white\n");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow\n");
                             }
                             else
                             {
@@ -348,10 +348,10 @@ int main()
                         else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
-                            printf("Carhartt\nModelli del momento: cargo beige, cargo neri, cargo denim neri");
-                            printf("Iuter\nModelli del momento: cargo neri, parachute pants neri");
-                            printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose");
-                            printf("Dickies\n Modelli del momento: Newington, 874, Worker Pants");
+                            printf("Carhartt\nModelli del momento: cargo beige, cargo neri, cargo denim neri\n");
+                            printf("Iuter\nModelli del momento: cargo neri, parachute pants neri\n");
+                            printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose\n");
+                            printf("Dickies\n Modelli del momento: Newington, 874, Worker Pants\n");
                         }
                         else if (strcmp(capo, "magliette") == 0)
                         {
@@ -373,7 +373,7 @@ int main()
                     {
                         if (strcmp(capo, "scarpe") == 0)
                         {
-                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
+                            if (strcmp(catstile, "casual") == 0)
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
@@ -421,7 +421,7 @@ int main()
                         printf("I brand che ti consigliamo sono:\n");
                         printf("John Lewis\n");
                         printf("Petit Bateau\n");
-                        printf("Polarn O.Pyret");
+                        printf("Polarn O.Pyret\n");
                     }
                     else
                     {
@@ -436,8 +436,8 @@ int main()
                 {
                     printf("I brand che ti consigliamo sono:\n");
                     printf("Little Blueberry Kids\n");
-                    printf("QforQuinn");
-                    printf("Frugi");
+                    printf("QforQuinn\n");
+                    printf("Frugi\n");
                 }
                 else if (eta > 12 && eta < 30)
                 {
@@ -445,45 +445,45 @@ int main()
                     {
                         if (strcmp(capo, "scarpe") == 0)
                         {
-                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
+                            if (strcmp(catstile, "casual") == 0)
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Jordan brand : Aj1, Aj3, Aj4\n");
-                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple");
-                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris");
-                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC");
+                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple\n");
+                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris\n");
+                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC\n");
                                 printf("Dottor Martens brand\n");
                                 printf("I modelli Dottor Martens del momento sono: Vegan Dottor Martens, High & Low\n ");
                                 printf("Veja brand\n");
                                 printf("I modelli del momento di Veja sono: V12 Leather White, V12 Leather Blue, V12 Leather Light Blue\n");
-                                printf("New Balance brand");
-                                printf("I modelli New Balance del momento sono: NB 530, NB 550");
-                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
-                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
-                                printf("Adidas Brand");
-                                printf("I modelli Adidas del momento sono: NB 530, NB 550");
-                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
-                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
+                                printf("New Balance brand\n");
+                                printf("I modelli New Balance del momento sono: NB 530, NB 550\n");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white\n");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow\n");
+                                printf("Adidas Brand\n");
+                                printf("I modelli Adidas del momento sono: NB 530, NB 550\n");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white\n");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow\n");
                             }
                             else
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Stella McCartney brand\n");
                                 printf("I modelli del momento di Stella McCartney sono: Eclipse low-top, Collab Adidas Brand\nTacchi 7 cm ecopelle\n");
-                                printf("Loro Piana\nModelli del momento: Loro Piana loafers");
+                                printf("Loro Piana\nModelli del momento: Loro Piana loafers\n");
 
                             }
                         }
                         else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
-                            printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zmpa");
+                            printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zampa\n");
                             printf("Anna Field\n");
                             printf("Aware\n");
-                            printf("Dickies\n Modelli del momento: Newington, 874, Duck Canvas");
-                            printf("Carhartt\nModelli del momento: cargo beige, cargo neri, cargo denim neri");
-                            printf("Iuter\nModelli del momento: cargo neri, parachute pants neri");
-                            printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose");
+                            printf("Dickies\n Modelli del momento: Newington, 874, Duck Canvas\n");
+                            printf("Carhartt\nModelli del momento: cargo beige, cargo neri, cargo denim neri\n");
+                            printf("Iuter\nModelli del momento: cargo neri, parachute pants neri\n");
+                            printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose\n");
                         }
                         else if (strcmp(capo, "magliette") == 0)
                         {
@@ -497,12 +497,12 @@ int main()
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Stussy\nFearofGod:essentials\nRalph Lauren\nPropaganda: modello con logo spinat, modello con logo serpente\n");
                         }
-                        else if(capo == "giubbotti")
+                        else if(strcmp(capo, "giubbotti") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("North Face: bomber quasi interamente in materiale riciclato\nCarhartt\nSave the duck\nDickies: giacche leggere di lana\n");
                         }
-                        else if (capo == "borse")
+                        else if (strcmp(capo, "borse") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Lacoste\nLongchamp: linea borse in materiale riciclato\nRalph Lauren\n");
@@ -510,9 +510,9 @@ int main()
                     }
                     else 
                     {
-                        if (capo == "scarpe")
+                        if (strcmp(capo, "scarpe") == 0)
                         {
-                            if (catstile == "casual" || catstile == "street")
+                            if (strcmp(catstile, "casual") == 0)
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
@@ -524,13 +524,13 @@ int main()
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Yves Saint Laurent brand\nModelli del momento: YSL Sandali Opium, YSL Decolleté aperte\n");
-                                printf("Casadei\nModelli del momento: Decolleté aperte/chiuse");
-                                printf("Gucci\nModelli del momento: Decolleté GG, Decolleté Slingback");
+                                printf("Casadei\nModelli del momento: Decolleté aperte/chiuse\n");
+                                printf("Gucci\nModelli del momento: Decolleté GG, Decolleté Slingback\n");
                                 printf("Gucci\nModelli del momento: Mocassini\n");
 
                             }
                         }
-                        else if (capo == "pantaloni")
+                        else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Burberry\n");
@@ -540,23 +540,23 @@ int main()
                             printf("Roberto Cavalli\n");
                             printf("7forallmankind\n");
                         }
-                        else if (capo == "magliette")
+                        else if (strcmp(capo, "magliette") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Ralph Lauren\nJacquemus\nMisbvn\n");
                             printf("Saint Barth\nOff White\nPalm Angels\n");
                         }
-                        else if (capo == "felpe")
+                        else if (strcmp(capo, "felpe") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Supreme\nPalm Angels: modello Logo back, modello Teddy bear\nPrada\n");
                         }
-                        else if(capo == "giubbotti")
+                        else if(strcmp(capo, "giubbotti") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Moncler: bomber in piuma ecosostenibile\nSupreme\nLoro Piana\n");
                         }
-                        else if (strccapo == "borse")
+                        else if (strcmp(capo, "borse") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Jacquemus: modello Le chiquito\nPrada: modello Re-Nylon\nBottega Veneta\n");
@@ -568,6 +568,13 @@ int main()
         {
             goto new;
         }
+        printf("Bene! Adesso indica il tipo di capo che vorresti acquistare! (Indica la tua scelta tra scarpe, pantaloni, magliette, felpe, giubbotti, borse, maglieria intima (solo neonati)\n");
+        scanf("%s", capo);
+    }
+    while (strcmp(acquirenteovenditore, "venditore") == 0)
+    {
+        printf("Perfetto! Inserisci il tipo di capo e contattaci per e-mail\n");
+        printf("La nostra email è: befashion@gmail.com");
         break;
     }
             
