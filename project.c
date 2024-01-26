@@ -212,7 +212,7 @@ int main()
                                 printf("I modelli del momento di Stella McCartney sono: Eclipse low-top, Collab Adidas Brand\nTacchi 7 cm ecopelle\n");
                             }
                         }
-                        else if (capo == "pantaloni")
+                        else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zmpa");
@@ -220,22 +220,22 @@ int main()
                             printf("Aware\n");
                             printf("Dickies\n Modelli del momento: Newington, 874, Duck Canvas");
                         }
-                        else if (capo == "magliette")
+                        else if (strcmp(capo, "magliette") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Polo Ralph Lauren\nSporty&Rich\nMisbvn\n");
                         }
-                        else if (capo == "felpe")
+                        else if (strcmp(capo, "felpe") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Stussy\nFearofGod:essentials\nRalph Lauren\n");
                         }
-                        else if(capo == "giubbotti")
+                        else if (strcmp(capo, "giubbotti") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("North Face: bomber quasi interamente in materiale riciclato\nCarhartt\nSave the duck\n");
                         }
-                        else if (capo == "borse")
+                        else if (strcmp(capo, "borse") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Lacoste\nLongchamp: linea borse in materiale riciclato\nRalph Lauren\n");
@@ -243,7 +243,7 @@ int main()
                     }
                     else 
                     {
-                        if (capo == "scarpe")
+                        if (strcmp(capo, "scarpe") == 0)
                         {
                             if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
                             {
@@ -259,29 +259,29 @@ int main()
                                 printf("Gucci\nModelli del momento: Decolleté GG, Decolleté Slingback");
                             }
                         }
-                        else if (capo == "pantaloni")
+                        else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Burberry\n");
                             printf("Prada\n");
                             printf("Jacquemus\n");
                         }
-                        else if (capo == "magliette")
+                        else if (strcmp(capo, "magliette") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Ralph Lauren\nJacquemus\nMisbvn\n");
                         }
-                        else if (capo == "felpe")
+                        else if (strcmp(capo, "felpe") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Supreme\nPalm Angels: modello Logo back, modello Teddy bear\nPrada\n");
                         }
-                        else if(capo == "giubbotti")
+                        else if (strcmp(capo, "giubbotti") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Moncler: bomber in piuma ecosostenibile\n");
                         }
-                        else if (capo == "borse")
+                        else if (strcmp(capo, "borse") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Jacquemus: modello Le chiquito\nPrada: modello Re-Nylon\nBottega Veneta\n");
@@ -320,9 +320,9 @@ int main()
                 {
                     if (budget < 240)
                     {
-                        if (capo == "scarpe")
+                        if (strcmp(capo, "scarpe") == 0)
                         {
-                            if (catstile == "casual" || catstile == "street")
+                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Jordan brand : Aj1, Aj3, Aj4");
@@ -345,7 +345,7 @@ int main()
                                 printf("I modelli del momento di Loro Piana sono: Loro Piana loafers, Loro Piana polacchine, Loro Piana tennis shoes\n");
                             }
                         }
-                        else if (capo == "pantaloni")
+                        else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Carhartt\nModelli del momento: cargo beige, cargo neri, cargo denim neri");
@@ -353,17 +353,17 @@ int main()
                             printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose");
                             printf("Dickies\n Modelli del momento: Newington, 874, Worker Pants");
                         }
-                        else if (capo == "magliette")
+                        else if (strcmp(capo, "magliette") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Polo Ralph Lauren: maglia logo semplice o teddy bear\nCarhartt\nDickies: maglietta logo semplice o personalizzata\n");
                         }
-                        else if (capo == "felpe")
+                        else if (strcmp(capo, "felpe") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Stussy\nFearofGod:essentials\nPropaganda: modello con logo spinat, modello con logo serpente\n");
                         }
-                        else if(capo == "giubbotti")
+                        else if (strcmp(capo, "giubbotti") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("North Face: piumini quasi interamente in materiale riciclato\nCarhartt\nSave the duck\nDickies: giacche leggere di lana\n");
@@ -371,9 +371,9 @@ int main()
                     }
                     else 
                     {
-                        if (capo == "scarpe")
+                        if (strcmp(capo, "scarpe") == 0)
                         {
-                            if (catstile == "casual" || catstile == "street")
+                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
@@ -387,24 +387,24 @@ int main()
                                 printf("Gucci\nModelli del momento: Mocassini\n");
                             }
                         }
-                        else if (capo == "pantaloni")
+                        else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Ralph Lauren\n");
                             printf("Roberto Cavalli\n");
                             printf("7forallmankind\n");
                         }
-                        else if (capo == "magliette")
+                        else if (strcmp(capo, "magliette") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Saint Barth\nOff White\nPalm Angels\n");
                         }
-                        else if (capo == "felpe")
+                        else if (strcmp(capo, "felpe") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Supreme\nPalm Angels: modello logo back, modello Teddy bear\nBape\n");
                         }
-                        else if(capo == "giubbotti")
+                        else if (strcmp(capo, "giubbotti") == 0)
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Moncler: bomber in piuma ecosostenibile\nSupreme\nLoro Piana\n");
@@ -443,9 +443,9 @@ int main()
                 {
                     if (budget < 240)
                     {
-                        if (capo == "scarpe")
+                        if (strcmp(capo, "scarpe") == 0)
                         {
-                            if (catstile == "casual" || catstile == "street")
+                            if ((strcmp(catstile, "casual") == 0) || (strcmp(catstile == "street") == 0))
                             {
                                 printf("I modelli e i brand che ti consigliamo sono:\n");
                                 printf("Jordan brand : Aj1, Aj3, Aj4\n");
@@ -474,7 +474,7 @@ int main()
 
                             }
                         }
-                        else if (capo == "pantaloni")
+                        else if (strcmp(capo, "pantaloni") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zmpa");
@@ -485,14 +485,14 @@ int main()
                             printf("Iuter\nModelli del momento: cargo neri, parachute pants neri");
                             printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose");
                         }
-                        else if (capo == "magliette")
+                        else if (strcmp(capo, "magliette") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Sporty&Rich\nMisbvn\n");
                             printf("Polo Ralph Lauren: maglia logo semplice o teddy bear\nCarhartt\nDickies: maglietta logo semplice o personalizzata\n");
                         }
                         }
-                        else if (capo == "felpe")
+                        else if (strcmp(capo, "felpe") == 0)
                         {
                             printf("I brand che ti consigliamo sono:\n");
                             printf("Stussy\nFearofGod:essentials\nRalph Lauren\nPropaganda: modello con logo spinat, modello con logo serpente\n");
@@ -556,7 +556,7 @@ int main()
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Moncler: bomber in piuma ecosostenibile\nSupreme\nLoro Piana\n");
                         }
-                        else if (capo == "borse")
+                        else if (strccapo == "borse")
                         {
                             printf("I brand e modelli che ti consigliamo sono:\n");
                             printf("Jacquemus: modello Le chiquito\nPrada: modello Re-Nylon\nBottega Veneta\n");
