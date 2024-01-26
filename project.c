@@ -97,7 +97,7 @@ int main()
     char sesso[50];
     int eta;
     char catstile[50];
-    char budget[50];
+    int budget;
     char capo[50];
     printf("Ciao! Ti diamo il benvenuto nel nostro sito. Sei già registrato o vuoi iniziare la registrazione?\n");
     scanf("%[^\n]*s", inizioregistrazione);
@@ -151,20 +151,420 @@ int main()
             scanf("%s", sesso);
             printf("Grazie! Ora indica la tua età\n");
             scanf("%d", &eta);
-            printf("Bene! Ora, indica la tua categoria di stile: casual, elegante, sportivo, street, punk, vintage\n");
+            printf("Bene! Ora, indica la tua categoria di stile: casual, elegante, street, tacchi\n");
             scanf("%s", catstile);
             printf("Perfetto! Un'ultima domanda: qual è il tuo budget?\n");
-            scanf("%s", budget);
-            printf("Bene! Adesso indica il tipo di capo che vorresti acquistare!\n");
+            scanf("%d", &budget);
+            printf("Bene! Adesso indica il tipo di capo che vorresti acquistare! (Indica la tua scelta tra scarpe, pantaloni, magliette, felpe, giubbotti, borse, maglieria intima (solo neonati)\n");
             scanf("%s", capo);
             armocromia();
+            if (strcmp(sesso, "femmina") == 0)
+            {
+                if ( eta < 6)
+                {
+                    if (budget < 30)
+                    {
+                        printf("I brand che ti consigliamo sono:\n");
+                        printf("John Lewis\n");
+                        printf("Petit Bateau\n");
+                        printf("Polarn O.Pyret");
+                    }
+                    else
+                    {
+                        printf("I brand che ti consigliamo sono:\n");
+                        printf("Paul Smith\n");
+                        printf("Infantium Victoria\n");
+                        printf("Nui Organics\n");
+                        printf("Little Green Radicals\n");
+                    }
+                }
+                else if (eta < 12)
+                {
+                    printf("I brand che ti consigliamo sono:\n");
+                    printf("Little Blueberry Kids\n");
+                    printf("QforQuinn");
+                    printf("Frugi");
+                }
+                else if (eta > 12 && eta < 30)
+                {
+                    if (budget < 240)
+                    {
+                        if (capo == "scarpe")
+                        {
+                            if (catstile == "casual" || catstile == "street")
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Jordan brand : Aj1, Aj3, Aj4\n");
+                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple");
+                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris");
+                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC");
+                                printf("Dottor Martens brand\n");
+                                printf("I modelli Dottor Martens del momento sono: Vegan Dottor Martens, High & Low\n ");
+                                printf("Veja brand\n");
+                                printf("I modelli del momento di Veja sono: V12 Leather White, V12 Leather Blue, V12 Leather Light Blue\n");
+                            }
+                            else
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Stella McCartney brand\n");
+                                printf("I modelli del momento di Stella McCartney sono: Eclipse low-top, Collab Adidas Brand\nTacchi 7 cm ecopelle\n");
+                            }
+                        }
+                        else if (capo == "pantaloni")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zmpa");
+                            printf("Anna Field\n");
+                            printf("Aware\n");
+                            printf("Dickies\n Modelli del momento: Newington, 874, Duck Canvas");
+                        }
+                        else if (capo == "magliette")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Polo Ralph Lauren\nSporty&Rich\nMisbvn\n");
+                        }
+                        else if (capo == "felpe")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Stussy\nFearofGod:essentials\nRalph Lauren\n");
+                        }
+                        else if(capo == "giubbotti")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("North Face: bomber quasi interamente in materiale riciclato\nCarhartt\nSave the duck\n");
+                        }
+                        else if (capo == "borse")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("Lacoste\nLongchamp: linea borse in materiale riciclato\nRalph Lauren\n");
+                        }
+                    }
+                    else 
+                    {
+                        if (capo == "scarpe")
+                        {
+                            if (catstile == "casual" || catstile == "street")
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
+                                printf("Balenciaga\nModelli del momento: Balenciaga Triple S, Balenciaga Track, Balenciaga Speed\n");
+                            }
+                            else
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Yves Saint Laurent brand\nModelli del momento: YSL Sandali Opium, YSL Decolleté aperte\n");
+                                printf("Casadei\nModelli del momento: Decolleté aperte/chiuse");
+                                printf("Gucci\nModelli del momento: Decolleté GG, Decolleté Slingback");
+                            }
+                        }
+                        else if (capo == "pantaloni")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Burberry\n");
+                            printf("Prada\n");
+                            printf("Jacquemus\n");
+                        }
+                        else if (capo == "magliette")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Ralph Lauren\nJacquemus\nMisbvn\n");
+                        }
+                        else if (capo == "felpe")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Supreme\nPalm Angels: modello Logo back, modello Teddy bear\nPrada\n");
+                        }
+                        else if(capo == "giubbotti")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("Moncler: bomber in piuma ecosostenibile\n");
+                        }
+                        else if (capo == "borse")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("Jacquemus: modello Le chiquito\nPrada: modello Re-Nylon\nBottega Veneta\n");
+                        }    
+                    }
+                }
+            }
+            else if(strcmp(sesso, "maschio") == 0)
+            {
+                if ( eta < 6)
+                {
+                    if (budget < 30)
+                    {
+                        printf("I brand che ti consigliamo sono:\n");
+                        printf("John Lewis\n");
+                        printf("Petit Bateau\n");
+                        printf("Polarn O.Pyret");
+                    }
+                    else
+                    {
+                        printf("I brand che ti consigliamo sono:\n");
+                        printf("Paul Smith\n");
+                        printf("Infantium Victoria\n");
+                        printf("Nui Organics\n");
+                        printf("Little Green Radicals\n");
+                    }
+                }
+                else if (eta < 12)
+                {
+                    printf("I brand che ti consigliamo sono:\n");
+                    printf("Little Blueberry Kids\n");
+                    printf("QforQuinn");
+                    printf("Frugi");
+                }
+                else if (eta > 12 && eta < 60)
+                {
+                    if (budget < 240)
+                    {
+                        if (capo == "scarpe")
+                        {
+                            if (catstile == "casual" || catstile == "street")
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Jordan brand : Aj1, Aj3, Aj4");
+                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple");
+                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris");
+                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC");
+                                printf("New Balance brand");
+                                printf("I modelli New Balance del momento sono: NB 530, NB 550");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
+                                printf("Adidas Brand");
+                                printf("I modelli Adidas del momento sono: NB 530, NB 550");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
+                            }
+                            else
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Loro Piana brand\n");
+                                printf("I modelli del momento di Loro Piana sono: Loro Piana loafers, Loro Piana polacchine, Loro Piana tennis shoes\n");
+                            }
+                        }
+                        else if (capo == "pantaloni")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Carhartt\nModelli del momento: cargo beige, cargo neri, cargo denim neri");
+                            printf("Iuter\nModelli del momento: cargo neri, parachute pants neri");
+                            printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose");
+                            printf("Dickies\n Modelli del momento: Newington, 874, Worker Pants");
+                        }
+                        else if (capo == "magliette")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Polo Ralph Lauren: maglia logo semplice o teddy bear\nCarhartt\nDickies: maglietta logo semplice o personalizzata\n");
+                        }
+                        else if (capo == "felpe")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Stussy\nFearofGod:essentials\nPropaganda: modello con logo spinat, modello con logo serpente\n");
+                        }
+                        else if(capo == "giubbotti")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("North Face: piumini quasi interamente in materiale riciclato\nCarhartt\nSave the duck\nDickies: giacche leggere di lana\n");
+                        }
+                    }
+                    else 
+                    {
+                        if (capo == "scarpe")
+                        {
+                            if (catstile == "casual" || catstile == "street")
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
+                                printf("Balenciaga\nModelli del momento: Balenciaga Triple S, Balenciaga Track, Balenciaga Speed\n");
+                                printf("Bape\nModelli del momento: modello Bapesta\n");
+                                printf("Off White\n");
+                            }
+                            else
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Gucci\nModelli del momento: Mocassini\n");
+                            }
+                        }
+                        else if (capo == "pantaloni")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Ralph Lauren\n");
+                            printf("Roberto Cavalli\n");
+                            printf("7forallmankind\n");
+                        }
+                        else if (capo == "magliette")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Saint Barth\nOff White\nPalm Angels\n");
+                        }
+                        else if (capo == "felpe")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Supreme\nPalm Angels: modello logo back, modello Teddy bear\nBape\n");
+                        }
+                        else if(capo == "giubbotti")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("Moncler: bomber in piuma ecosostenibile\nSupreme\nLoro Piana\n");
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if ( eta < 6)
+                {
+                    if (budget < 30)
+                    {
+                        printf("I brand che ti consigliamo sono:\n");
+                        printf("John Lewis\n");
+                        printf("Petit Bateau\n");
+                        printf("Polarn O.Pyret");
+                    }
+                    else
+                    {
+                        printf("I brand che ti consigliamo sono:\n");
+                        printf("Paul Smith\n");
+                        printf("Infantium Victoria\n");
+                        printf("Nui Organics\n");
+                        printf("Little Green Radicals\n");
+                    }
+                }
+                else if (eta < 12)
+                {
+                    printf("I brand che ti consigliamo sono:\n");
+                    printf("Little Blueberry Kids\n");
+                    printf("QforQuinn");
+                    printf("Frugi");
+                }
+                else if (eta > 12 && eta < 30)
+                {
+                    if (budget < 240)
+                    {
+                        if (capo == "scarpe")
+                        {
+                            if (catstile == "casual" || catstile == "street")
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Jordan brand : Aj1, Aj3, Aj4\n");
+                                printf("I modelli Aj1 del momento sono: Aj1 Chicago red, Aj1 UNC, Aj1 purple");
+                                printf("I modelli Aj3 del momento sono: Aj3 White Cement, Aj3 Dark Mocha, Aj3 Dark Iris");
+                                printf("I modelli Aj4 del momento sono: Aj4 Black Cat, Aj4 blu navy, Aj4 retro UNC");
+                                printf("Dottor Martens brand\n");
+                                printf("I modelli Dottor Martens del momento sono: Vegan Dottor Martens, High & Low\n ");
+                                printf("Veja brand\n");
+                                printf("I modelli del momento di Veja sono: V12 Leather White, V12 Leather Blue, V12 Leather Light Blue\n");
+                                printf("New Balance brand");
+                                printf("I modelli New Balance del momento sono: NB 530, NB 550");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
+                                printf("Adidas Brand");
+                                printf("I modelli Adidas del momento sono: NB 530, NB 550");
+                                printf("I modelli NB 530 del momento sono: NB grey, NB black, NB white");
+                                printf("I modelli NB 550 del momento sono: NB 550 Red, NB 550 Light blue & Yellow");
+                            }
+                            else
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Stella McCartney brand\n");
+                                printf("I modelli del momento di Stella McCartney sono: Eclipse low-top, Collab Adidas Brand\nTacchi 7 cm ecopelle\n");
+                                printf("Loro Piana\nModelli del momento: Loro Piana loafers");
+
+                            }
+                        }
+                        else if (capo == "pantaloni")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Even&Odd\n Modelli del momento: Jeans, Palazzo, Zmpa");
+                            printf("Anna Field\n");
+                            printf("Aware\n");
+                            printf("Dickies\n Modelli del momento: Newington, 874, Duck Canvas");
+                            printf("Carhartt\nModelli del momento: cargo beige, cargo neri, cargo denim neri");
+                            printf("Iuter\nModelli del momento: cargo neri, parachute pants neri");
+                            printf("Dolly Noire\nModelli del momento: cargo beige, tuta con stampa rose");
+                        }
+                        else if (capo == "magliette")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Sporty&Rich\nMisbvn\n");
+                            printf("Polo Ralph Lauren: maglia logo semplice o teddy bear\nCarhartt\nDickies: maglietta logo semplice o personalizzata\n");
+                        }
+                        }
+                        else if (capo == "felpe")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Stussy\nFearofGod:essentials\nRalph Lauren\nPropaganda: modello con logo spinat, modello con logo serpente\n");
+                        }
+                        else if(capo == "giubbotti")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("North Face: bomber quasi interamente in materiale riciclato\nCarhartt\nSave the duck\nDickies: giacche leggere di lana\n");
+                        }
+                        else if (capo == "borse")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("Lacoste\nLongchamp: linea borse in materiale riciclato\nRalph Lauren\n");
+                        }
+                    }
+                    else 
+                    {
+                        if (capo == "scarpe")
+                        {
+                            if (catstile == "casual" || catstile == "street")
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Golden goose\nModelli del momento: Golden Goose Ball Star, Golden Goose Superstar\n");
+                                printf("Balenciaga\nModelli del momento: Balenciaga Triple S, Balenciaga Track, Balenciaga Speed\n");
+                                printf("Bape\nModelli del momento: modello Bapesta\n");
+                                printf("Off White\n");
+                            }
+                            else
+                            {
+                                printf("I modelli e i brand che ti consigliamo sono:\n");
+                                printf("Yves Saint Laurent brand\nModelli del momento: YSL Sandali Opium, YSL Decolleté aperte\n");
+                                printf("Casadei\nModelli del momento: Decolleté aperte/chiuse");
+                                printf("Gucci\nModelli del momento: Decolleté GG, Decolleté Slingback");
+                                printf("Gucci\nModelli del momento: Mocassini\n");
+
+                            }
+                        }
+                        else if (capo == "pantaloni")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Burberry\n");
+                            printf("Prada\n");
+                            printf("Jacquemus\n");
+                            printf("Ralph Lauren\n");
+                            printf("Roberto Cavalli\n");
+                            printf("7forallmankind\n");
+                        }
+                        else if (capo == "magliette")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Ralph Lauren\nJacquemus\nMisbvn\n");
+                            printf("Saint Barth\nOff White\nPalm Angels\n");
+                        }
+                        else if (capo == "felpe")
+                        {
+                            printf("I brand che ti consigliamo sono:\n");
+                            printf("Supreme\nPalm Angels: modello Logo back, modello Teddy bear\nPrada\n");
+                        }
+                        else if(capo == "giubbotti")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("Moncler: bomber in piuma ecosostenibile\nSupreme\nLoro Piana\n");
+                        }
+                        else if (capo == "borse")
+                        {
+                            printf("I brand e modelli che ti consigliamo sono:\n");
+                            printf("Jacquemus: modello Le chiquito\nPrada: modello Re-Nylon\nBottega Veneta\n");
+                        }   
+                    }
+                }
+            }    
+            break ;
         }
-        else
-        {
-            printf("nooo");
-        }
-        break;
-    }
 return (0);
 }
+
 
